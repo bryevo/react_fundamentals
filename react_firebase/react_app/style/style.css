@@ -1,0 +1,116 @@
+/*############# SDSU Parking Project Title ################*/
+
+div.homelogo {
+    font-family: Helvetica; 
+    font-size: 50px;
+    margin: 12px; 
+    text-align: center;
+}
+/*############# Images/GIFs ################*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+img.shen {
+    max-width: 717px;
+    max-height: 1215px;
+}
+img.perfect {
+    max-width: 314px;
+    max-height: 420px;
+}
+/*############# Navigation Bar ################*/
+.navContainer {
+    font-family: Helvetica;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navlink {
+    float: left;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+.navlink .ps-btn{
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    padding: 14px 16px;
+}
+/*############# Login/Signup Bar ################*/
+.navlink.user {
+    float: right;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+.navlink.user .ps-btn{
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    padding: 14px 16px;
+}
+/*############# Dropdown bar ################*/
+.ps-dropdown {
+    float: left;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+.ps-dropdown .ps-btn{
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    padding: 14px 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+/*############# Hover Active elements ################*/
+
+.navlink:hover, .ps-dropdown:hover .ps-btn {background-color:#DF0000;}
+.dropdown-content a:hover {background-color: #DF0000;}
+.ps-dropdown:hover .dropdown-content {display: block;}
+.ps-dropdown:hover .ps-btn:active {background-color: black}
+.navlink:active {background-color: black}
+.dropdown-content a:active {background-color: black;}
+
+/* Mobile adjustments*/
+@media screen and (max-width: 800px){
+    .navlink {float: none; text-align: center;}
+    .navlink.user {float: none; text-align: center;}
+    .ps-dropdown {float: none}
+}
