@@ -5,7 +5,15 @@ div.homelogo {
     font-size: 50px;
     margin: 12px; 
     text-align: center;
+    -webkit-text-fill-color: white;
 }
+
+/*############# Body ################*/
+body {
+    background-color:  #39393a;
+}
+/*############# Body ################*/
+
 /*############# Images/GIFs ################*/
 img {
     display: block;
@@ -20,6 +28,21 @@ img.perfect {
     max-width: 314px;
     max-height: 420px;
 }
+
+/*############# Parking Container ################*/
+.ParkingContainer{
+     -webkit-text-fill-color: white;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.ParkingContainer .rowa .col-md-6{
+    font-size: 20px;
+}
+.ParkingContainer .rowb .col-md-4 {
+    font-size: 20px;
+}
+
+/*############# Parking Container ################*/
+
 /*############# Navigation Bar ################*/
 .navContainer {
     font-family: Helvetica;
