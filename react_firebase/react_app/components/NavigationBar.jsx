@@ -54,7 +54,7 @@ export default class NavigationBar extends React.Component {
             </div><hr/> {/*Line break in HTML*/}
             {/*<div><img className="shen" src={require('../content/butSAM.jpg')}/></div>*/}
                 {/*<hr/> Line break in HTML*/}
-                <Route exact path="/" component={App}/>
+                <Route exact path="/" component={Home}/>
                 <Route path="/" component={Child}/>
                 <Route path="/about" component={About}/>
                 <Route path="/login" component={Login}/>
