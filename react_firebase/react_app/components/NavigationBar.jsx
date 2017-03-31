@@ -14,12 +14,16 @@ import * as firebase from 'firebase';
 // )
 // This is the same
 class Child extends React.Component {
+    
     render() {
+        const style = {
+            WebkitTextFillColor: 'white'
+        }
         console.log(this.props);
         const webpath = this.props.location.pathname;
         if (webpath != "/")
-            return (<div>ID: {webpath.slice(1,webpath.length)}</div>);
-        else return (<div>ID: home</div>
+            return (<div style={style}>ID: {webpath.slice(1,webpath.length)}</div>);
+        else return (<div style={style}>ID: home</div>
         )
     }
 }
@@ -52,10 +56,8 @@ export default class NavigationBar extends React.Component {
                  <div className="navlink user" ><NavLink to="/login"><input id="log-btn" type="button" value="Login" className="ps-btn"></input></NavLink></div>
                  <div className="navlink user" ><NavLink to="/signup"><button className="ps-btn">Sign Up</button></NavLink></div>
             </div><hr/> {/*Line break in HTML*/}
-            {/*<div><img className="shen" src={require('../content/butSAM.jpg')}/></div>*/}
-                {/*<hr/> Line break in HTML*/}
-                <Route exact path="/" component={Home}/>
                 <Route path="/" component={Child}/>
+                <Route exact path="/" component={Home}/>
                 <Route path="/about" component={About}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/signup" component={SignUp}/>

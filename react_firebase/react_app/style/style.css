@@ -1,5 +1,4 @@
 /*############# SDSU Parking Project Title ################*/
-
 div.homelogo {
     font-family: Helvetica; 
     font-size: 50px;
@@ -9,9 +8,7 @@ div.homelogo {
 }
 
 /*############# Body ################*/
-body {
-    background-color:  #39393a;
-}
+body {background-color:  #39393a;}
 /*############# Body ################*/
 
 /*############# Images/GIFs ################*/
@@ -20,25 +17,40 @@ img {
     width: 100%;
     height: auto;
 }
-img.shen {
-    max-width: 717px;
-    max-height: 1215px;
-}
 img.perfect {
-    max-width: 314px;
-    max-height: 420px;
+    max-height: 314px;
+    max-width: 420px;
 }
+img.park {
+    max-height: 202px;
+    max-width: 300px;
+    display: block;
+    padding-top: 15px;
+}
+img.logos {
+    max-height: 32px;
+    max-width: 32px;
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+}
+/*############# Images/GIFs ################*/
 
 /*############# Parking Container ################*/
-.ParkingContainer{
-     -webkit-text-fill-color: white;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-.ParkingContainer .rowa .col-md-6{
+.parking-row {
+    overflow: hidden;
+    background-color: black;
+    -webkit-text-fill-color: white;
+    box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.2);
     font-size: 20px;
+    padding: 10px 0px 20px 10px;
 }
-.ParkingContainer .rowb .col-md-4 {
-    font-size: 20px;
+.col-lg-8 .lot-percent {
+    font-size: 48px;
+    padding: 21.5px 0px 21.5px 0px;
+}
+
+.park-logos {
+    padding-top: 9%;
 }
 
 /*############# Parking Container ################*/
@@ -48,12 +60,12 @@ img.perfect {
     font-family: Helvetica;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
 }
 .navlink {
     float: left;
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
     text-align: center;
 }
 .navlink .ps-btn{
@@ -68,11 +80,13 @@ img.perfect {
     color: white;
     padding: 14px 16px;
 }
+/*############# Navigation Bar ################*/
+
 /*############# Login/Signup Bar ################*/
 .navlink.user {
     float: right;
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
     text-align: center;
 }
 .navlink.user .ps-btn{
@@ -87,11 +101,13 @@ img.perfect {
     color: white;
     padding: 14px 16px;
 }
+/*############# Login/Signup Bar ################*/
+
 /*############# Dropdown bar ################*/
 .ps-dropdown {
     float: left;
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
     text-align: center;
 }
 .ps-dropdown .ps-btn{
@@ -110,7 +126,7 @@ img.perfect {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #212121;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -122,6 +138,8 @@ img.perfect {
     display: block;
     text-align: center;
 }
+/*############# Dropdown bar ################*/
+
 /*############# Hover Active elements ################*/
 
 .navlink:hover, .ps-dropdown:hover .ps-btn {background-color:#DF0000;}
@@ -130,10 +148,13 @@ img.perfect {
 .ps-dropdown:hover .ps-btn:active {background-color: black}
 .navlink:active {background-color: black}
 .dropdown-content a:active {background-color: black;}
+/*############# Hover Active elements ################*/
 
 /* Mobile adjustments*/
 @media screen and (max-width: 800px){
     .navlink {float: none; text-align: center;}
     .navlink.user {float: none; text-align: center;}
     .ps-dropdown {float: none}
+    .col-xs-6.col-sm-6.col-md-7 .lot-percent {font-size: 32px; padding-bottom: 0px}
+    .logos {max-height: 32px; max-width: 32px}
 }
