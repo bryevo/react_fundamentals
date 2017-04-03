@@ -14,12 +14,10 @@ import * as firebase from 'firebase';
 // )
 // This is the same
 class Child extends React.Component {
-    
     render() {
         const style = {
             WebkitTextFillColor: 'white'
         }
-        console.log(this.props);
         const webpath = this.props.location.pathname;
         if (webpath != "/")
             return (<div style={style}>ID: {webpath.slice(1,webpath.length)}</div>);
@@ -29,7 +27,6 @@ class Child extends React.Component {
 }
 export default class NavigationBar extends React.Component {
     render() {
-        console.log
         return(
             <Router><div>
                 <div className="navContainer">

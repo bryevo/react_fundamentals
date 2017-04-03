@@ -31,6 +31,7 @@ componentDidMount() {
                 <div className="col-xs-6 col-sm-6 col-md-7 col-lg-8">
                     <div className="lot-percent">{this.state.percentage}% full</div>
                     <div className="park-logos">
+                        <a target="_blank" className="directionlink" href="https://goo.gl/maps/XMhysDxfcnn">Get Directions <img className="directions" src={require('../content/directions.png')}/></a>
                         <img className="logos" src={require('../content/Students.png')}/>
                         <img className="logos" src={require('../content/Faculty.png')}/>
                         <img className="logos" src={require('../content/Disability.png')}/>

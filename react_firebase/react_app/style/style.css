@@ -33,6 +33,14 @@ img.logos {
     display: inline-block;
     margin: 10px 5px 10px 5px;
 }
+img.directions {
+    margin: 10px 5px 10px 5px;
+    background-color: transparent;
+    max-height: 32px;
+    max-width: 32px;
+    display: inline-block;
+    
+}
 /*############# Images/GIFs ################*/
 
 /*############# Parking Container ################*/
@@ -48,11 +56,9 @@ img.logos {
     font-size: 48px;
     padding: 21.5px 0px 21.5px 0px;
 }
-
-.park-logos {
-    padding-top: 9%;
+.directionlink {
+    display: block;
 }
-
 /*############# Parking Container ################*/
 
 /*############# Navigation Bar ################*/
@@ -157,4 +163,5 @@ img.logos {
     .ps-dropdown {float: none}
     .col-xs-6.col-sm-6.col-md-7 .lot-percent {font-size: 32px; padding-bottom: 0px}
     .logos {max-height: 32px; max-width: 32px}
+    .directionlink{display: inline-block}
 }
