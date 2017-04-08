@@ -1,7 +1,6 @@
 import React from 'react';
 import splashStyles from '../style/splashStyles.css';
 import * as firebase from 'firebase';
-import { BrowserRouter as Router, Route, NavLink, Link } from 'react-router-dom';
 
 import About from './About.jsx';
 
@@ -33,6 +32,7 @@ export default class SplashScreen extends React.Component{
                 console.log("signing in!");
                 const promise = firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password);
                 this.setState({loggedIn:'true'});
+                props.loginFunction();
                 alert('Welcome' + this.state.email);
             } catch(e){
                 console.log("HELP log in" + e.message);
@@ -53,17 +53,13 @@ export default class SplashScreen extends React.Component{
     componentDidUpdate(props, state){
         if(this.state.loggedIn == 'true'){
             console.log("HEY YEAH YOU");
-            console.log();
-            this.context.router.push('/About');
-            Router.push('/About');
-
+            window.location.assign("/About");
         }
     }
 
     render(){
-        console.log(this.props);
+        console.log(this.props.loginFunction);
         return(
-            <Router>
             <div className = "div_splash">
                 <h1>Welcome to San Diego!</h1>
                 <form >
@@ -93,7 +89,6 @@ export default class SplashScreen extends React.Component{
                 <h1>Logged In: {this.state.loggedIn}</h1>
                 </form>
             </div>
-            </Router>
         );
     }
 }

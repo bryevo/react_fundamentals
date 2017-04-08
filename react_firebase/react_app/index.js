@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as firebase from 'firebase';
-import SplashScreen from './components/SplashScreen.jsx';
+import App from './components/App.jsx';
 
 // Initialize Firebase
   const config = {
@@ -15,6 +15,6 @@ import SplashScreen from './components/SplashScreen.jsx';
   firebase.initializeApp(config);
 
 ReactDOM.render(
-    <SplashScreen />,
-    document.getElementById('splash')
+    <App/>,
+    document.getElementById('app')
 );
