@@ -1,4 +1,5 @@
 /*############# SDSU Parking Project Title ################*/
+
 div.homelogo {
     font-family: Helvetica; 
     font-size: 50px;
@@ -8,7 +9,10 @@ div.homelogo {
 }
 
 /*############# Body ################*/
-body {background-color:  #39393a;}
+body {
+    background-color:  #39393a;
+    background-image: url("../assets/bg_splash.png");
+}
 /*############# Body ################*/
 
 /*############# Images/GIFs ################*/

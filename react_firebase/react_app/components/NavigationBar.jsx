@@ -7,6 +7,7 @@ import About from './About.jsx';
 import Login from './Login.jsx';
 import SignUp from './SignUp.jsx';
 import * as firebase from 'firebase';
+import SplashScreen from './SplashScreen.jsx';
 
 
 // const Child = ({ match }) => (
@@ -56,8 +57,7 @@ export default class NavigationBar extends React.Component {
                  <div className="navlink user" ><NavLink to="/login"><input id="log-btn" type="button" value="Login" className="ps-btn"></input></NavLink></div>
                  <div className="navlink user" ><NavLink to="/signup"><button className="ps-btn">Sign Up</button></NavLink></div>
             </div><hr/> {/*Line break in HTML*/}
-                <Route path="/" component={Child}/>
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/" component={SplashScreen}/>
                 <Route path="/about" component={About}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/signup" component={SignUp}/>
