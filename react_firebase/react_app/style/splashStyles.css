@@ -1,0 +1,75 @@
+.div_splash{
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    color: white;
+    margin-bottom: 200px;
+}
+input {
+    border: none;
+    border-bottom: 5px solid white;
+    background: transparent;
+    padding: 15px 15px;
+    width: 30%;
+    margin-bottom: 20px;
+    color: white;
+}
+input[type="password"]
+{
+  -webkit-text-security: disc;
+}
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}
+
+
+.btn.btn-primary.btn-lg.btn-success{
+    background-color: transparent;
+    color: white;
+    border: 3px solid #4CAF50;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-right: 25px;
+}
+.btn.btn-primary.btn-lg.btn-success:hover{
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 5px 5px 5px rgba(0,0,0,0.19);
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+.btn.btn-primary.btn-lg.btn-info{
+    background-color: transparent;
+    color: white;
+    border: 3px solid #008CBA;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.2s;
+}
+.btn.btn-primary.btn-lg.btn-info:hover{
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 5px 5px 5px rgba(0,0,0,0.19);
+    background-color: #008CBA; /* Green */
+    color: white;
+}
+
+body {
+    background-image: url("../assets/bg_splash.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-size: cover ;
+    margin-bottom: 250px;
+}
